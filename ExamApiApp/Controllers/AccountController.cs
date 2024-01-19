@@ -31,7 +31,7 @@ namespace ExamApiApp.Controllers
                 return BadRequest("Invalid credentials");
             }
 
-            // Rest of the code remains unchanged
+            
             var key = ConfigurationManager.AppSettings["JwtKey"];
             var issuer = ConfigurationManager.AppSettings["JwtIssuer"];
             var audience = ConfigurationManager.AppSettings["JwtAudience"];
